@@ -9,6 +9,8 @@ This app allows user to be able to add expenses and deposits to their budget wit
 **Click for demo**
 [![Demo](https://img.youtube.com/vi/fMw-ZUlv3Jk/0.jpg)](https://youtu.be/fMw-ZUlv3Jk)
 
+---
+
 - [Overview](#Overview)
 - [Technologies](#Technologies)
 - [Credits](#Credits)

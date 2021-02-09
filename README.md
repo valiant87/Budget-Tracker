@@ -2,7 +2,7 @@
 
 This app allows user to be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, it should sync the total when brought back online
 
-- [Heroku Live Link]()
+- [Heroku Live Link](https://desolate-ravine-70236.herokuapp.com/)
 
 ---
 

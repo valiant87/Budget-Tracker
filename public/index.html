@@ -56,27 +56,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="/db.js"></script>
+    <script src="index.js"></script>
+    <!-- https://developers.google.com/web/fundamentals/primers/service-workers -->
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
-          navigator.serviceWorker.register("service-worker.js").then((reg) => {
-            // registration successful
-            console.log("We have identified your service worker file", reg);
-          });
+          navigator.serviceWorker
+            .register("service-worker.js", { scope: "/" })
+            .then((reg) => {
+              // registration successful
+              console.log("We have identified your service worker file", reg);
+            });
         });
       }
     </script>
-    <script src="index.js"></script>
-    <!-- https://developers.google.com/web/fundamentals/primers/service-workers -->
-    <!-- <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("service-worker.js").then((reg) => {
-            // registration successful
-            console.log("We have identified your service worker file", reg);
-          });
-        });
-      }
-    </script> -->
   </body>
 </html>

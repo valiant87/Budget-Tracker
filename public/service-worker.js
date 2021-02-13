@@ -4,6 +4,7 @@ const FILES_TO_CACHE = [
   "/index.js",
   "/styles.css",
   "/db.js",
+  "/manifest.webmanifest",
 ];
 
 const CACHE_NAME = "static-cache-v2";
@@ -40,7 +41,7 @@ self.addEventListener("activate", function (evt) {
 
 // fetch
 self.addEventListener("fetch", function (evt) {
-  if (evt.request.url.includes("/api/")) {
+  if (evt.request.url.includes("/api/transaction")) {
     evt.respondWith(
       caches
         .open(DATA_CACHE_NAME)
